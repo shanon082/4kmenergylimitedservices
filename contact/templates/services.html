@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - 4KM Energy Services</title>
+    <link rel="stylesheet" href="{% static '/css/services.css' %}">
+    
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo-container">
+            <img src="{% static '/images/company_logo.png'%}" alt="4KM Energy Services Limited" class="logo-image"> 
+            <span class="company-name">4KM Energy Services</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}" class="nav-item">Home</a></li>
+                <li><a href="{% url 'about' %}" class="nav-item">About Us</a></li>
+                <li><a href="{% url 'services' %}" class="nav-item active">Our Services</a></li>
+                <li><a href="{% url 'contact' %}" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+        <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="{% url 'home' %}" class="nav-item">Home</a></li>
+            <li><a href="{% url 'about' %}" class="nav-item">About Us</a></li>
+            <li><a href="{% url 'services' %}" class="nav-item active">Our Services</a></li>
+            <li><a href="{% url 'contact' %}" class="nav-item">Contact</a></li>
+        </ul>
+    </div>
+    
+    <section class="services">
+        <h1 class="section-title">Our Expertise & Services</h1>
+        <p class="section-subtitle">Delivering Excellence in Every Project</p>
+    
+        <div class="service-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <i class="fas fa-solar-panel"></i>
+                <h3>Renewable Energy Solutions</h3>
+                <p>We provide cutting-edge solar and wind energy solutions, ensuring sustainability and efficiency for your energy needs.</p>
+            </div>
+    
+            <!-- Service 2 -->
+            <div class="service-card">
+                <i class="fas fa-hard-hat"></i>
+                <h3>Engineering & Construction</h3>
+                <p>High-quality infrastructure development with precision, excellence, and innovation, tailored to your project.</p>
+            </div>
+    
+            <!-- Service 3 -->
+            <div class="service-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Electrical Installations</h3>
+                <p>Safe and efficient electrical system installations for residential, commercial, and industrial spaces.</p>
+            </div>
+    
+            <!-- Service 4 -->
+            <div class="service-card">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Consultancy & Project Management</h3>
+                <p>From inception to completion, we provide expert guidance ensuring efficiency, compliance, and project success.</p>
+            </div>
+        </div>
+    
+        <div class="cta">
+            <p>Let's Power Your Vision</p>
+            <a href="{% url 'contact'%}">Get in Touch</a>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 4KM Energy Services Limited. All Rights Reserved.</p>
+            <p>Email: <a href="4kmenergyserviceslimited@gmail.com">4kmenergyserviceslimited@gmail.com</a></p>
+            <p>Tel: <a href="tel:+256772335579">+256 772 335 579</a> / <a href="tel:+256756335570">+256 756 335 570</a></p>
+        </div>
+    </footer>
+    <script src="{% static '/js/script.js'%}"></script>
+    
+</body>
+</html>

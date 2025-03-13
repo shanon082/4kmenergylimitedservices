@@ -1,0 +1,90 @@
+/* Apply background image */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('images/contact-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure content is readable */
+.contact-container {
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay for better readability */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Form styling */
+.contact-form h2 {
+    font-size: 2rem;
+    color: #FFD700;
+}
+
+.contact-form p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #FFD700;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-form button:hover {
+    background: #FFA500;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 95%;
+    }
+}
+
