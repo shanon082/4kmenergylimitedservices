@@ -50,17 +50,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: #000;
+    padding: 20px 5%;
+    background: black;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1500;
-    height: 100px;
+    height: 80px;
     border-bottom: 4px solid #FFD700;
-    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.4);
-    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
 }
 .logo-container {
     display: flex;
@@ -122,30 +121,70 @@ nav {
     cursor: pointer;
     color: #FFD700;
 }
-
 .mobile-menu {
     display: none;
     position: absolute;
-    top: 150px;
-    right: 10px;
-    background: #000;
-    width: 260px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(255, 215, 0, 0.3);
-    transition: all 0.3s ease-in-out;
+    top: 80px;
+    right: 0;
+    background: black;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
 }
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    padding: 10px 0;
+}
+
+
 .mobile-menu ul li a {
-    display: block;
-    color: white;
-    padding: 10px;
+    color: #FFD700;
+    text-decoration: none;
     font-size: 18px;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.5);
+    font-weight: bold;
 }
 
 .mobile-menu ul li a:hover {
     color: white;
 }
+/* Responsive Design for Mobile Navigation */
+@media screen and (max-width: 768px) {
+    /* .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-menu.active {
+        display: block;
+        z-index: 3000;
+    } */
+    .nav-links {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+    
+    .mobile-menu.active {
+        display: block;
+        z-index: 3000;
+    }
+}
+
 
 /* Hero Section */
 .hero {
@@ -228,6 +267,7 @@ footer {
     
     .menu-icon {
         display: block;
+        z-index: 4000;
     }
     
     .mobile-menu.active {

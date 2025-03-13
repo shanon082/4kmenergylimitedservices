@@ -1,6 +1,6 @@
 /* Reset and General Styles */
-body {
-    margin: 0;
+.container {
+    margin-top: 20px;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #3D6D94 50%, white 50%);
     color: #000;
@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+
 }
 
 /* Main Content Wrapper */
@@ -37,6 +38,7 @@ body {
     text-align: center;
     min-height: 100vh;
     padding: 50px 20px;
+    margin-top: 20px;
     background: linear-gradient(to bottom, #3D6D94 50%, white 50%);
     color: black;
 }
@@ -53,6 +55,7 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    margin-top: 40px;
     color: #3D6D94;
 }
 
