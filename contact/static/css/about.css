@@ -120,3 +120,32 @@
         align-items: center;
     }
 }
+
+/* Responsive Design for Small Devices */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .about-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

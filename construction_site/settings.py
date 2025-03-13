@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['fourkmenergylimitedserv.onrender.com']
 
-# ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['*']
 
 
 # Application definition

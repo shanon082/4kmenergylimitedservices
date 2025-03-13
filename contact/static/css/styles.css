@@ -286,5 +286,55 @@ footer {
     }
 }
 
+/* Responsive Design for Small Devices */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 5%;
+        height: 60px;
+    }
+
+    .logo-container {
+        margin-left: 10px;
+    }
+
+    .logo-image {
+        height: 50px;
+    }
+
+    .company-name {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu.active {
+        display: block;
+        z-index: 3000;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
 
 

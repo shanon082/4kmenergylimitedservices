@@ -287,6 +287,66 @@ footer p {
         font-size: 1.2rem;
     }
 }
+
+/* Responsive Design for Small Devices */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 5%;
+        height: 60px;
+    }
+
+    .logo-container {
+        margin-left: 10px;
+    }
+
+    .logo-image {
+        height: 50px;
+    }
+
+    .company-name {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu.active {
+        display: block;
+        z-index: 3000;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+    }
+
+    .services p {
+        font-size: 1rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+
+    .cta a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 6px; /* Thin scrollbar */
