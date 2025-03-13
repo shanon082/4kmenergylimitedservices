@@ -149,3 +149,26 @@
         padding: 10px;
     }
 }
+
+/* Responsive Design for Very Small Devices */
+@media (max-width: 480px) {
+    .about-container {
+        padding: 15px;
+    }
+
+    .about h1 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    .about-box {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}

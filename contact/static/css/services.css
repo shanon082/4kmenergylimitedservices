@@ -347,6 +347,48 @@ footer p {
     }
 }
 
+/* Responsive Design for Very Small Devices */
+@media (max-width: 480px) {
+    header {
+        padding: 5px 5%;
+        height: 50px;
+    }
+
+    .logo-container {
+        margin-left: 5px;
+    }
+
+    .logo-image {
+        height: 40px;
+    }
+
+    .company-name {
+        font-size: 18px;
+    }
+
+    .services h1 {
+        font-size: 1.5rem;
+    }
+
+    .services p {
+        font-size: 0.9rem;
+    }
+
+    .cta {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .cta a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 6px; /* Thin scrollbar */

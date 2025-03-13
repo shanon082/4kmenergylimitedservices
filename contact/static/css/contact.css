@@ -121,3 +121,34 @@ footer {
     }
 }
 
+/* Responsive Design for Very Small Devices */
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .contact-form h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-form p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .contact-form button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
